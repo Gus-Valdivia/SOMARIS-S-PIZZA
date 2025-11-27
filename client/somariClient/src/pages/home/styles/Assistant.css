@@ -1,0 +1,119 @@
+/* Botón circular flotante */
+.assistant-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: white;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.assistant-btn img {
+    width: 50px;
+    height: 50px;
+}
+
+
+/* Ventana principal del chat */
+.assistant-chat {
+    position: fixed;
+    bottom: 110px;
+    right: 20px;
+    width: 350px;
+    height: 500px;
+    background: white;
+    color: black;             /* <-- TEXTO NEGRO */
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+
+/* Botón de cerrar */
+.assistant-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    color: black;    /* <-- visible */
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Área de mensajes */
+.chat-messages {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/* BURBUJA MENSAJE DEL USUARIO */
+.message.user {
+    align-self: flex-end;
+    background: #DCF8C6;
+    padding: 10px 14px;
+    border-radius: 15px;
+    max-width: 80%;
+    color: black;
+    font-size: 14px;
+}
+
+
+/* BURBUJA MENSAJE DEL ASISTENTE */
+.message.bot {
+    align-self: flex-start;
+    background: #E8E8E8;
+    padding: 10px 14px;
+    border-radius: 15px;
+    max-width: 80%;
+    color: black;
+    font-size: 14px;
+}
+
+
+/* Footer del input */
+.chat-input {
+    display: flex;
+    padding: 10px;
+    background: #f0f0f0;
+    border-top: 1px solid #ccc;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+}
+
+.chat-input button {
+    margin-left: 10px;
+    background: #ff4d4d;
+    border: none;
+    padding: 10px 14px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
