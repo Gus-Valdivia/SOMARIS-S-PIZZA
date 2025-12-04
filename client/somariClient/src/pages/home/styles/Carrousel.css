@@ -6,32 +6,13 @@
     --color-black: #242424;
 }
 
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-body {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    background : var(--color-gray);
-    font-family: 'Montserrat', sans-serif;
-}
-
-/* 🔥 ESTA ES LA CLASE QUE TENÍAS MAL */
 .carrousel {
     position: relative;
     width: var(--card-size);
     height: var(--card-size);
-    perspective: 900px;                /* Mejor profundidad 3D */
+    perspective: 900px;
     transform-style: preserve-3d;
+    margin-top: 2rem;
 }
 
 /* Contenedor de cada tarjeta */
@@ -61,6 +42,7 @@ body {
     text-align: justify;
     transition: all 0.35s ease-out;
     box-shadow: 0 20px 40px rgba(0,0,0,0.2); /* Mejor profundidad */
+    backdrop-filter: blur(8px);
 }
 
 /* Títulos */

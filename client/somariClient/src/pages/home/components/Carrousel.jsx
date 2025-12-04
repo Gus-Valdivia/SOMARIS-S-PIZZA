@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { TiChevronLeftOutline, TiChevronRightOutline } from "react-icons/ti";
-import "../styles/Carrousel.css"; // Ajusta la ruta según tu proyecto
+import "../styles/Carrousel.css";
 import pizzaCuadrada from "../../../imagenes/pizzaCuadrada.jpeg";
 import hochoPizza from "../../../imagenes/hochoPizza.jpg"
 import pizzaRedonda2 from "../../../imagenes/pizzaRedonda2.jpg"

@@ -17,7 +17,7 @@ const Router = () => {
         <Routes>
             {/* Home */}
             <Route path = "/" element = {<HomeLayout/>}>
-                <Route index element = {<Carrousel/>}/>
+                <Route index element = {<div className="carrousel-wrapper"><Carrousel /></div>}/>
                 <Route path="UnExist" element = {<UnExist/>}/>
                 {/*
                 <Route index element = {<Index/>}/>
