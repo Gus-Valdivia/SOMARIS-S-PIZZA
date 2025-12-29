@@ -102,8 +102,7 @@ export default function Register() {
             {/* DERECHA - IMAGEN */}
             <div className="hidden md:flex items-center justify-center bg-[#9AA36E]">
                 <img
-                    src="/pizza-register.png"
-                    alt="Pizza illustration"
+                    src="/"
                     className="max-w-md"
                 />
             </div>
